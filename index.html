@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Table | Services</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+/* Gaya khusus untuk tabel */
+.table {
+  margin: auto;
+  table-layout: fixed;
+  width: 70%; /* Mengatur lebar tabel secara otomatis */
+}
+
+/* Gaya khusus untuk setiap sel */
+td, th {
+  word-wrap: break-word; /* Mengatur kata untuk wrap jika tidak muat dalam sel */
+  overflow-wrap: break-word;
+  max-width: 150px; /* Mengatur lebar maksimum untuk setiap sel */
+  text-align: center; /* Memusatkan konten di dalam sel */
+}
+
+
+
+    /* Gaya khusus untuk tabel */
+    .table-scrollable {
+      max-height: 400px; /* Atur ketinggian maksimum untuk area scroll */
+      overflow-y: auto; /* Aktifkan scrollbar jika melebihi ketinggian maksimum */
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">List Services Smshub</h1>
+    <p class="lead text-center">Klik pada sel untuk menyalin nilai</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data akan dimasukkan di sini dengan JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (untuk fitur dropdown dan lainnya) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
